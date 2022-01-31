@@ -12,14 +12,31 @@
         table{
             width: 300px;
             border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightslategray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:#383838;
+
+
+        }
         thead, tfoot{
             background-color: grey;
             color: white;
+        }
+        tbody >tr:nth-child(2n) {
+            background-color: lightslategray;
         }
         td.numero{
             text-align: right;
@@ -33,6 +50,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPITION (legenda da tabela) Caption não usa td nem tr
             THEAD
                 TR,TD,TH
             TBODY
@@ -41,10 +59,12 @@
                 TR,TD, TH    
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
 
             </tr>
         </thead>
@@ -179,7 +199,7 @@
             </tr>
 
             <tr>
-                <td>RoRaima</td>
+                <td>Roraima</td>
                 <td class="numero">652.713 </td>
             </tr>
          
@@ -187,12 +207,25 @@
       
             <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>    
 
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit asperiores facere minus exercitationem nesciunt labore omnis qui maxime debitis ipsa esse officiis laborum nulla, tempore laudantium distinctio sint nihil?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, asperiores tempore. Repellendus aspernatur deleniti dolorum consequuntur ipsam laborum, sint tempora totam perferendis, nulla soluta vel? Corporis necessitatibus laboriosam quos corrupti?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur tempore doloribus aspernatur iusto quae pariatur sapiente asperiores minus, rem fuga iure minima unde quos nihil molestiae libero qui perferendis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit asperiores facere minus exercitationem nesciunt labore omnis qui maxime debitis ipsa esse officiis laborum nulla, tempore laudantium distinctio sint nihil?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, asperiores tempore. Repellendus aspernatur deleniti dolorum consequuntur ipsam laborum, sint tempora totam perferendis, nulla soluta vel? Corporis necessitatibus laboriosam quos corrupti?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur tempore doloribus aspernatur iusto quae pariatur sapiente asperiores minus, rem fuga iure minima unde quos nihil molestiae libero qui perferendis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit asperiores facere minus exercitationem nesciunt labore omnis qui maxime debitis ipsa esse officiis laborum nulla, tempore laudantium distinctio sint nihil?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, asperiores tempore. Repellendus aspernatur deleniti dolorum consequuntur ipsam laborum, sint tempora totam perferendis, nulla soluta vel? Corporis necessitatibus laboriosam quos corrupti?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur tempore doloribus aspernatur iusto quae pariatur sapiente asperiores minus, rem fuga iure minima unde quos nihil molestiae libero qui perferendis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit asperiores facere minus exercitationem nesciunt labore omnis qui maxime debitis ipsa esse officiis laborum nulla, tempore laudantium distinctio sint nihil?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, asperiores tempore. Repellendus aspernatur deleniti dolorum consequuntur ipsam laborum, sint tempora totam perferendis, nulla soluta vel? Corporis necessitatibus laboriosam quos corrupti?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur tempore doloribus aspernatur iusto quae pariatur sapiente asperiores minus, rem fuga iure minima unde quos nihil molestiae libero qui perferendis.
+    </p>
     
 </body>
 
