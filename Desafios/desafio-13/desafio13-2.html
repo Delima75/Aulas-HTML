@@ -4,53 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesclagem de tabelas</title>
-    <style>
+    <title>Tabela parte 2</title>
+    <Style>
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            border-collapse: collapse;
-            width: 300px;
-            
+            text-align: center;
+            /*border-collapse: collapse;*/
+
         }
-        
         td{
             border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-
+            width: 50px;
 
         }
-    </style>
+    </Style>
 </head>
 <body>
 
     <table>
+   
         <tr>
-           <td colspan="" rowspan="">A</td>
-           <td>B</td>  <!--Expandiu a colulna para ocupar duas colunas, e linha row 2 linhas -->
-            <!-- <td>C</td> retirada de proposito -->  
-            <td>C</td>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+            
+        </tr>
+   
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
             
         </tr>
 
         <tr>
-            <td>D</td>
-            <td colspan="2" rowspan="">E</td>
-            
-        </tr>
-        <tr>
-            <td>F</td>
             <td>G</td>
-            <td rowspan="2">H</td>
-        </tr>
-        <tr>
+            <td>H</td>
             <td>I</td>
-            <td>J</td>
             
         </tr>
-          
+
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+            
+        </tr>
+
+        <tr>
+            <td colspan="4">M</td>
+            
+        </tr>
+   
+   
     </table>
     
 </body>
