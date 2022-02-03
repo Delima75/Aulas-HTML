@@ -9,22 +9,35 @@
         body{
             font-family: Arial, Helvetica, sans-serif
         }
-        tabel{
-
-
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
 
         }
+        
         th{
             border: 1px solid black;
-            background-color: grey;
+            background-color:grey;
             color: white;
+            height: 50px;
+            
         }
-
+        th.ex-hu{
+            background-color: white;
+            color: black;
+        }
+        
+                
         td{
             border: 1px solid black;
             width: 50px;
+        }
+        .media{
+            background-color: grey;
+            color: white;
 
         }
+
 
     </style>
 </head>
@@ -33,59 +46,76 @@
     <table>
         <caption>Tabela do Desafio 14</caption>
         <thead>
-            <th scope="rowgroup">Área
-                
-                <th scope="col">Disciplinas</th>
-                <th scope="colgroup" rolspan="2"> Notas
-                    <th scope="colgroup">Nota 1</th>
-                    <th scope="colgroup">Nota 2</th>
-                </th>
-                <th>Média</th>
-            </th>
+            <th scope="row" rowspan="1">Área </th>
+
+            <th scope="col" rowspan="1">Disciplinas</th>
+                             
+            <th scope="col" rowspan="1" colspan="2"> Notas</th>
+            
+            <th scope="col" rowspan="1">Média</th>         
+                        
            
         </thead>
         <tbody>
+            <td></td>
+            <td></td>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <td></td>
+            
+
+
+            
             <tr>
-                <th rowspan="3">Exatas
+                <th class="ex-hu" scope="col" rowspan="3">Exatas</th>
+                    
                     <td>matemática</td>
-                    <td>00.00</td>
-                    <td>00.00</td>
-                </th> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                             
+                
             </tr>
             <tr>
                 <td>Física</td>
-                <td>00.00</td>
-                <td>00.00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
             </tr>
             <tr>
                 <td>Biologia</td>
-                <td>00.00</td>
-                <td>00.00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
             </tr>
-            <th colspan="4" style="text-align: left"  >Media de Exatas
-                <td>00.00</td>
+            
+            
+            
+            <th scope="row" colspan="4" style="text-align: left">Media de Exatas
+                <td class="media">00.00</td>
+
             </th>
            
             <tr>
-                <th rowspan="2">Humanas
+                <th class="ex-hu" rowspan="2">Humanas
                     <td>História</td>
-                    <td>00.00</td>
-                    <td>00.00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </th> 
             </tr>
             <tr>
                 <td>Geografia</td>
-                <td>00.00</td>
-                <td>00.00</td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
-            <th colspan="4" style="text-align: left"  >Media de Humanas
-                <td>00.00</td>
+            <th scope="row" colspan="4" style="text-align: left" >Media de Humanas
+                <td class="media">00.00</td>
             </th>
-          
-            
-
-
-
+                      
         </tbody>
 
 
